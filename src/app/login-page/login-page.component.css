@@ -24,7 +24,7 @@
   width: 25%;
   border-color: black;
   border: 3px solid;
-  font-size: 12px;
+  font-size: 15px;
   padding: 5px;
 }
 
@@ -37,7 +37,16 @@
 @media (max-width: 768px) {
   .large-input {
     width: 50%;
-    font-size: 8px;
+    font-size: 16px;
     padding: 8px;
+  }
+
+  .submit-Button {
+    margin-top: 12px;
+    border-radius: 0.8em;
+    width: 25vh;
+    font-size: 18px;
+    background-color: red;
+    color: white;
   }
 }
