@@ -1,0 +1,54 @@
+/* Apply styles to the entire form */
+form {
+  margin: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.form-row {
+  margin-bottom: 15px;
+}
+
+
+input[type='text'],
+input[type='password'],
+input[type='email'],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+select {
+  background-color: white;
+}
+
+button[type='submit'] {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #ff0000; 
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-header {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: black; 
+}

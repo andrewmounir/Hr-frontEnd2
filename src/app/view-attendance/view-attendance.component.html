@@ -1,0 +1,27 @@
+<button class="AttendaceButton" (click)="addNewDate()">Add New Attendance</button>
+<mat-form-field class="datePicker">
+    <input matInput [matDatepicker]="picker" placeholder="Choose a date " [(ngModel)]="selectedDateTime">
+    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+</mat-form-field>
+
+<div *ngIf="employees">
+    <table class="attendance-table">
+        <thead>
+            <tr>
+                <th>Attendance</th>
+                <th>{{ employees.firstName }}</th>
+                <th>{{ employees.lastName }}</th>
+                <th>{{ employees.group }}</th>
+            </tr>
+        </thead>
+        <tbody>
+            <ng-container *ngFor="let date of employees.date; let i = index">
+                <tr>
+                    <td>{{ date| date: 'longDate'}}</td>
+                    <td><button (click)="deleteDate(employees._id, i)">Delete</button></td>
+                </tr>
+            </ng-container>
+        </tbody>
+    </table>
+</div>

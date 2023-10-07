@@ -1,0 +1,49 @@
+<h1>Create A New User</h1>
+
+
+<form (ngSubmit)="onSubmit()">
+
+    <div class="form-row">
+        <input type="text" placeholder="firstName" name="firstName" [(ngModel)]="firstName">
+    </div>
+    <div class="form-row">
+        <input type="text" placeholder="lastName" name="lastName" [(ngModel)]="lastName">
+
+    </div>
+    <div class="form-row">
+        <input type="password" placeholder="password" name="password" [(ngModel)]="password">
+
+    </div>
+    <div class="form-row">
+        <input type="email" placeholder="Email" name="email" [(ngModel)]="email">
+
+    </div>
+    <div class="form-row">
+
+        <select type="text" placeholder="employeeType" name="employeeType" [(ngModel)]="employeeType">
+            <option value="HR">HR</option>
+            <option value="Normal">Normal</option>
+
+        </select>
+
+    </div>
+
+    <div class="form-row">
+
+        <select type="text" placeholder="group" name="group" [(ngModel)]="group">
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+            <option value="Information Technology">IT</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Managment">Managment</option>
+            <option value="Auditing">Auditing</option>
+            <option value="Compliance">Compliance</option>
+
+        </select>
+
+    </div>
+
+    <button type="submit">Add To System</button>
+    <br>
+    <button type="submit" (click)="cancelEdit() ">Cancel</button>
+</form>

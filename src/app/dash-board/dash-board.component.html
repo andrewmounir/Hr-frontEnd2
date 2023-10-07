@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>Group</th>
+            <th>Employee Type</th>
+            <th>Actions</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees;let counter= index">
+            <td>{{counter+1}}</td>
+            <td>{{ employee.firstName }}</td>
+            <td>{{ employee.lastName }}</td>
+            <td>{{ employee.email }}</td>
+            <td>{{ employee.group }}</td>
+            <td>{{ employee.employeeType }}</td>
+            <td>
+                <button (click)="editEmployee(employee._id)">Edit Employee</button>
+                <button (click)="deleteEmployee((employee._id))">Delete Employee</button>
+                <button (click)="viewAttendance(employee._id)">View Attendance</button>
+            </td>
+
+
+
+        </tr>
+    </tbody>
+</table>

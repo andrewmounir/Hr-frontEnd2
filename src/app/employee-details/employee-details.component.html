@@ -1,0 +1,51 @@
+<h2>Edit Employee</h2>
+<div *ngIf="employee" class="containerMain">
+    <div>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" [(ngModel)]="employee.firstName">
+    </div>
+    <div>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" [(ngModel)]="employee.lastName">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" [(ngModel)]="employee.email">
+
+
+
+    </div>
+
+    <div>
+        <label for="employeeType">employeeType:</label>
+        <!-- <input type="employeeType" id="employeeType" [(ngModel)]="employee.employeeType"> -->
+        <select name="HR" id="employeeType">
+
+
+            <option value="HR">HR</option>
+            <option value="Normal">Normal</option>
+
+        </select>
+
+    </div>
+    <div>
+        <label for="group">group:</label>
+
+
+        <select type="text" placeholder="group" name="group" id="group" [(ngModel)]="employee.group">
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+            <option value="Information Technology">IT</option>
+            <option value="Accounting">Accounting</option>
+            <option value="Managment">Managment</option>
+            <option value="Auditing">Auditing</option>
+            <option value="Compliance">Compliance</option>
+
+        </select>
+
+
+
+    </div>
+    <button type="submit" (click)="saveChanges()">Save</button>
+    <button type="submit" (click)="cancelEdit()">Cancel</button>
+</div>
