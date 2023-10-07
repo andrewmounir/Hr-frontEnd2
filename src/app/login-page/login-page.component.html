@@ -1,21 +1,29 @@
-<div class="container">
-    <div class="header">
-        <h1 class="title">HR System</h1>
-        <p>Please Login to Continue</p>
-    </div>
+<div class="header">
 
-    <div class="content">
-        <form (ngSubmit)="onSubmit()">
-            <div class="form-row">
-                <input type="email" name="email" placeholder="Input your Email" id="" class="large-input"
-                    [(ngModel)]="email" />
-            </div>
+    <h1 class="title">HR System</h1>
+    <p>Please Login to Continue </p>
 
-            <div class="form-row">
-                <input type="password" name="password" placeholder="Password" id="" class="large-input"
-                    [(ngModel)]="password" />
-            </div>
-            <button type="submit" class="submit-Button">Login</button>
-        </form>
-    </div>
+
+</div>
+
+<div class="content">
+
+
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-row">
+
+            <input type="email" name="email" placeholder="Input your Email" id="" class="large-input"
+                [(ngModel)]="email">
+        </div>
+
+        <div class="form-row">
+            <input type="password" name="password" placeholder="Password" id="" class="large-input"
+                [(ngModel)]="password">
+        </div>
+        <button type="submit" class="submit-Button">Login</button>
+
+
+    </form>
+
 </div>
