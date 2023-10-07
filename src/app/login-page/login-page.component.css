@@ -1,37 +1,53 @@
-* {
-  margin: 0;
-  padding: 0;
+.container {
+  max-width: 800px; /* Adjust this as needed */
+  margin: 0 auto;
+  padding: 20px;
 }
-.title {
-  color: red;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 3rem;
-}
+
 .header {
   text-align: center;
-  margin-top: 5%;
+}
+
+.title {
+  font-size: 24px;
 }
 
 .content {
-
+  margin-top: 20px;
   text-align: center;
-  margin-top: 5%;
 }
+
 .form-row {
-  padding: 1%;
+  margin-bottom: 10px;
 }
 
 .large-input {
-  width: 15%;
-  border-color: black;
-  border: 3px solid;
-  font-size: 12px;
-  padding: 5px;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
 }
 
 .submit-Button {
-  border-radius: 0.8em;
-  width: 15vh;
-  background-color: red;
-  color: white;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 20px;
+  }
+
+  .large-input {
+    font-size: 14px;
+  }
+
+  .submit-Button {
+    font-size: 16px;
+  }
 }
