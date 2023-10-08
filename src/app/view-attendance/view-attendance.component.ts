@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { EmployeesService } from '../employees.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
-import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-view-attendance',
   templateUrl: './view-attendance.component.html',
@@ -16,7 +15,6 @@ export class ViewAttendanceComponent implements OnInit {
     private router: Router,
     private snackBar: MatSnackBar,
     private route: ActivatedRoute,
-    private datePipe: DatePipe
   ) {}
 
   selectedDateTime: Date | any;

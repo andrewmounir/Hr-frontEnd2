@@ -1,27 +1,45 @@
-# FrontEnd
+# HR System Project Documentation
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
+- [Introduction](#introduction)
+- [Usage](#usage)
+- [Features](#features)
+- [Deployment](#deployment)
+- [possible Bugs](#known-bugs)
+- [Version History](#version-history)
 
-## Development server
+## Introduction:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+This project is developed as per requirment in short this project allow HR users only to login to the system and do multiple functions.
 
-## Code scaffolding
+## Usage:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To install the project clone it , run the following command: npm install , then ng serve
+or simply use the url link deployed: https://hr-front-end2.vercel.app/login-page
 
-## Build
+- Use this account to login (this is a HR User ) email: admin@ivoiceup.com password: abc123
+- after successfully logging in you can now view all users details
+- then accessed user will be granted to create more users , delete users , edit (existing users), and (view,Add,Delete) existing attendance sheet for each specific user by clicking all related links
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Features:
 
-## Running unit tests
+- Add other users (FirstName,LastName,Email,Temporary Password, Group , Type(normal,HR))
+- Edit other users (FirstName , LastName,Email,Password,Group,Type (normal,HR))
+- Delete other users
+- Add,Delete,View Attendance For a Specific User
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Deployment:
 
-## Running end-to-end tests
+- This project was deployed as a part of a fullStack project and hosted by vercel link: https://hr-front-end2.vercel.app/login-page
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## Known Bugs:
 
-## Further help
+- Password maybe cracked easily but this is just a demonstration for a project but in real world scenario two-factor Authentication and mail confiriming and locking user must be implemented
+- Since project is hosted at a free server sometimes logging in or doing actions maybe slow depending on the shared resource from the hosting server
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Developed By:
+
+Developed by Andrew Essam as a part of test project based on a documentation provided.
+
+##Version History:
+. V1.00
+Initial Release
